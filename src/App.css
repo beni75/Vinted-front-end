@@ -1,0 +1,262 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: "Font", "sans-sérif";
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.button-primary {
+  background-color: #ffffff;
+  color: #09b0ba;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #09b0ba;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: #09b0ba;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #09b0ba;
+  cursor: pointer;
+}
+
+.button-deconnect {
+  background-color: #c2175b;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ---------------------- */
+/* -- HEADER ------------- */
+/* ---------------------- */
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-vinted {
+  width: 120px;
+}
+
+.header-link-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-bottom-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.header-sort-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-search-input {
+  width: 500px;
+  height: 30px;
+  background-color: #ecf1f1;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.header-slider-container {
+  width: 300px;
+}
+
+/* ---------------------- */
+/* -- HOME ------------- */
+/* ---------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  height: 100%;
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-home {
+  margin-top: 200px;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.section-home {
+  margin-top: 200px;
+}
+
+/* ---------------------- */
+/* -- SIGNUP ------------- */
+/* ---------------------- */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 200px;
+}
+/* ---------------------- */
+/* -- OFFER ------------- */
+/* ---------------------- */
+
+.section-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 200px;
+}
+.img-offer {
+  width: 200px;
+  object-fit: cover;
+}
+
+/* ---------------------- */
+/* -- PUBLISH ------------- */
+/* ---------------------- */
+
+.section-publish {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 200px;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+.dropzone button {
+  margin-top: 10px;
+  background-color: #09b0ba;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sort-container {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-payment {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-wrapper {
+  background-color: #e9e6e6;
+  width: 600px;
+  height: 600px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.loader {
+  border: 4px solid #09b0ba;
+  border-top: 4px solid #09b0ba;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
