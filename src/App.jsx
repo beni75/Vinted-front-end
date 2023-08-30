@@ -14,6 +14,7 @@ import Payment from "./pages/Payment";
 //import des composents
 import Header from "./components/Header";
 import Loader from "./components/Loader";
+import CheckoutForm from "./components/checkoutForm";
 
 function App() {
   const [userToken, setUserToken] = useState(Cookies.get("userToken") || null);
